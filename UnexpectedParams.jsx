@@ -1,0 +1,1 @@
+In React Router Dom v6, using the `useParams` hook inside a component that's not directly a child of a route element can lead to unexpected behavior.  The `useParams` hook relies on the route context, which might not be available at that point in the component tree. This results in `params` being `undefined` causing errors when you try to access the parameters.
