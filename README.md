@@ -1,0 +1,3 @@
+This repository demonstrates a common issue encountered when using the useParams hook in React Router v6.  The problem arises when attempting to access route parameters from a component that is not a direct child of a route element defined using the <Route> component. The useParams hook relies on the routing context, which may not be available deeper within the component tree. This often results in undefined params and runtime errors.
+
+The repository contains two files: UnexpectedParams.jsx which showcases the problem and FixedParams.jsx which provides a working solution using context.  The solution provides a detailed explanation and alternative approaches to resolve this issue.
